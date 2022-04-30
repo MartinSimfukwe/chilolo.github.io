@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css." no repeat>
+	<link rel="stylesheet" shref="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PV1GOfQNHSoD2xbE+QkPxCAF1NEevoEH3S10sibVcOQVnN" crossorigin="anonymous"> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+	
+		{
+			margin: o;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'poppins', sans-serif;}
+
+		.contact {
+			position: relative;
+			min-height: 100vh;
+			padding: 50px 100px;
+			display: flex;
+			justify-items: center;
+			align-items: center;
+			flex-direction: column;
+			color: black;}
+	   .contact .content {
+			max-width: 800px ;
+			text-align: center;}
+	   .contact .content h2 {
+			font-size: 36px;
+			font-weight: 500;
+			color:blueviolet; font-family: arial;}
+       .contact .content p {
+			font-size: 30px;
+			font-weight: 300;
+			color: indianred; font-family: arial;}
+	  .container{
+			width: 100%;
+			display: flex;
+			justify-items: center;
+			align-items: center;
+			margin-top: 30px;}
+	   .container .contactInfo {
+			width: 50%;
+			display: flex;
+			flex-direction: column;	}
+	    .container .contactInfo .box{
+			position: relative;
+			padding: 20px 0;
+			display: flex;	}
+     
+       .container .contactInfo .box .ico{
+		min-width: 60px;
+		height: 60px;
+		background-color: white;
+		display: flex;						
+		justify-content: center;
+		border-radius: 50%;
+		font-size: 22px;}
+
+	.container .contactInfo .box .icon{
+		min-width: 60px;
+		height: 60px;
+		background-color: white;
+		display: flex;						
+		justify-content: center;
+		border-radius: 50%;
+		font-size: 22px;}
+
+    .container .contactInfo .box .text h3{
+			font-weight: 300;
+			color: #45a049;}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;   
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; }
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+
+}
+.container p {
+	color: black;
+	font-size: 20px;
+}
+
+
+	</style>
+</head>
+<body>
+	<section class="contact">
+	<div class="content">
+		<h2>Contact Us</h2>
+	
+	</div>		
+	<div class="container">
+		<div class="contactInfo">
+		<div class="box">
+			<div class="icon"><img src="maps.jpg" width="60px"></i></div>
+			<div class="text">
+				<h3>Address</h3>
+				<p>Riverside CBU Campus, <br> Jambo Drive Road, <br> Room: C-227 <br> <a href="https://maps.google.com/?cid=18255805464621931652&amp;entry=gps">View on map</a></p>
+			</div>
+		</div>
+			<div class="box">
+			<div class="icon"><img src="ph.png" width="60px"></div>
+			<div class="text">
+				<h3>Phone</h3>
+				<p>+260 764456997  <br>+260 975611097  <br> +260 953993436 </p>
+			</div>
+		</div>
+		<div class="box">
+			<div class="icon"><img src="email.jpg" width="60px"></div>
+			<div class="text">
+				<h3>Email</h3>
+				<p>chiloloenterprise@gmail.com</p>
+			</div>
+		</div>
+		</div>
+<div class="container">
+  <form action="action_page.php">
+  			<em><p>For more information or queries you can alsways reach out to us; 
+		As a company our greatest aim is to save you better at all times!</p></em>
+		  		<br>
+		  		<br>
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="email" placeholder="Your email..">
+
+    <label for="country">Country</label>
+    <input type="text" id="country" name="country" placeholder="Your country..">
+    
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+    <br>
+    <br>
+    <br>
+<p>Copyright (C) 2022 Chilotech Ltd | All rights reserved  <br> Terms and Conditions Apply!</p> 
+
+  </form>
+</div>
+			
+		</div>
+	</div>		
+	</section>
+</body>
+</html>

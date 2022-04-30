@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+ul li{ width: 110px; 
+      float: right;
+      position: relative;
+      top: 5%;
+      text-align: center;
+      border: 1px solid white;
+      background-color: ;
+      ospacity: 0.8;
+      font-family: arial;
+      padding: 7px;
+      margin-left: 4px;}
+      ul li a{ text- text-decoration: none; color white;}
+      .text {background-color: ;}
+      ul li:hover { background-color: yellow; }
+      
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: slateblue;
+
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: yellowgreen;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+p2 {
+	position: relative;
+	text-align: center;
+	width: 700px;
+	
+
+}
+
+.button:hover { 
+  background-color: #555;
+}
+h1 {
+	color: yellowgreen;
+}
+h2 {
+	color: green;
+}
+p {
+	color: blue;
+	position: relative;
+	text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="about-section">
+  <h1>Our Services</h1>
+  <p1>Welcome To Chilolo Enterprise</p1> <br> <br>
+  <p2>The best platform that values your needs <br> <em>Customer Satisfaction Is Our Priority"</em>
+  </p2>
+</div>
+
+<h2 style="text-align:center">What We Offer</h2> <br>
+<div class="row">
+  <div class="column">
+    <h2>Graphical Designing</h2>
+    <div class="card"> </div>
+     <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="design1.jpg" style="width:81%">
+  <div class="text">Next</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="design.jpg" style="width:81%">
+  <div class="text">Next</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="mobile1.png" style="width:85s%">
+  <div class="text">Next</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+      <div class="container">
+        
+       <em> <p class="title">Dream It - We Can Create It!</p>
+    </em>
+       <p>Check our catalog - for our previous work.</p>
+        <p><button class="button">Very Affordable</button></p>
+      </div>
+    
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h2>Web-Development</h2>
+      <img src="web1.jpg" alt="Adamson" style="width:100%">
+      <div class="container">
+        
+        
+        <em><p class="title">We Believe In Class & Uniqueness</p></em>
+        <p>Try us for your work today!</p>
+        <p><button class="button">For as low as K5000</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h2>Printer Services</h2>
+      <img src="printer.jpg" alt="Saviour" style="width:100%">
+      <div class="container">
+        
+        <em><p class="title">Quality Delivery Is Our Priority!</p>
+        </em>
+        <p>Try us for affordable printer services</p>
+        <p><button class="button">Printing: K1 | P-Copying: 0.5n | Scan: K3 </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="column">
+    <div class="card">
+      <h2>Computer Repairing</h2>
+      <img src="repair.jpg" alt="Saviour" style="width:101%">
+      <div class="container">
+        
+        <em><p class="title"> We Fix All Computer Ailments</p></em>
+        
+        <p>Visit us at our offices at C-227 for assistance!</p>
+        <p><button class="button">10% discount off market price</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="column">
+    <div class="card"> </div>
+    <h2>Mobile Money Services</h2>
+<img src="mobile1.png" alt="M-services" style="width:100%">
+
+      <div class="container">
+                <em><p class="title">Always Open Just 4 U!</p></em>
+        
+        <p>We pledge to lender our services 24/7 for your sske!!</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    
+  </div>
+</div>
+
+<div class="column">
+    <div class="card"> </div>
+     <h2>Sockets + Fitting</h2>
+<img src="socket.jpg" alt="Sockets" style="width:98%">
+      <div class="container">
+       
+      <em>  <p class="title">Have An Issue With A Socket?</p></em>
+        
+        <p>Have Single and double Sockets on sale + Fitting.</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    
+  </div>
+</div>
+
+<div class="column">
+    <div class="card"> </div>
+      <h2>Fresh & Tasty Cenas</h2>
+  <img src="cena5.jpg" alt="Cenas" style="width:84%">
+      <div class="container">
+        
+       <em> <p class="title">Always Fresh & Tasty</p></em>
+        
+        <p>Come and have a taste</p>
+        <p><button class="button">K1.00 & K1.50 Respectively</button></p>
+      </div>
+    
+  </div>
+</div>
+
+<div class="column">
+    <div class="card">
+       <h2>Collateral Based Loans</h2>
+      <img src="lending2.jpg" alt="Saviour" style="width:100%">
+
+      <div class="container">
+       
+        <em><p class="title">Run Out On Cash - We Got You!</p></em>
+        
+        <p>Powered by GreyLendings</p>
+        <p><button class="button">Our rates are fair</button></p>
+      </div>
+    </div>
+  </div>
+
+ <div class="column">
+    <div class="card">
+      <h2>Aqualis Bodymist</h2>
+      <img src="mist.jpg" alt="Adamson" style="width:89%">
+      <div class="container">
+        
+        
+        <em><p class="title">Freshness For Your Body</p></em>
+        <p>Dress smart and smell good!</p>
+        <p><button class="button">Low price @ K25.00</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+ <div> 
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<p> <br> <br> <br> <br> <br> Copyright (C) 2022 Chilotech Ltd | All rights reserved  
+ 		<br> Terms and Conditions Apply!</p></div> 
+ 	<ul> 
+  <ul type="none">
+   <li><a href="contact.html">Contact Us</a></li>
+  <li><a href="Chilolo.html">Home</a></li>
+</ul>
+</body>
+</html>
